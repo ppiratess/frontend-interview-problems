@@ -46,7 +46,7 @@ const usePhonebook = ({
 }: { dialedNumber?: number[] | null } = {}) => {
   const phoneBook = useMemo(
     () =>
-      PHONE_BOOK.map((name) => ({
+      PHONE_BOOK?.sort().map((name) => ({
         name,
         digits: transformContactToLookup(name),
       })),
