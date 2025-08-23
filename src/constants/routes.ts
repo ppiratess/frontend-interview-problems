@@ -1,20 +1,20 @@
-import type { RouteObject } from "react-router";
+import type { RouteObject } from 'react-router';
 
-import Homepage from "../Homepage";
-import AppLayout from "../layout/AppLayout";
-import PhoneBook from "../problems/Phonebook";
+import Homepage from '../Homepage';
+import AppLayout from '../layout/AppLayout';
+import PhoneBook from '../problems/Phonebook';
 
 export const APP_ROUTES: RouteObject[] = [
   {
-    path: "/",
+    path: '/',
     Component: AppLayout,
     children: [
       {
-        path: "/",
+        path: '/',
         Component: Homepage,
       },
       {
-        path: "phone-book",
+        path: 'phone-book',
         Component: PhoneBook,
       },
     ],
