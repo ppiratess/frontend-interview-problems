@@ -1,1 +1,38 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f8fafc;
+  --text-color: #111827;
+  --text-color-secondary: #6b7280;
+
+  --background-color: #f1f5f9;
+  --background-dark-blue: #1e293b;
+}
+
+@theme {
+  --color-white: var(--white);
+  --color-background: var(--background-color);
+  --color-text: var(--text-color);
+
+  --color-dark-blue: var(--background-dark-blue);
+}
+
+@layer base {
+  body {
+    font-family:
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+    line-height: 1.5;
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+}
