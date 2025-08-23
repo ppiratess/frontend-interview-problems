@@ -19,6 +19,7 @@
   --color-white: var(--white);
   --color-background: var(--background-color);
   --color-text: var(--text-color);
+  --color-text-secondary: var(--text-color-secondary);
 
   --color-dark-blue: var(--background-dark-blue);
 }
