@@ -21,6 +21,7 @@ const Sidebar = () => {
             className={({ isActive }) =>
               `px-8 py-2 ${isActive ? 'bg-highlight font-bold text-white' : ''}`
             }
+            key={path.name}
           >
             {path.name}
           </NavLink>
